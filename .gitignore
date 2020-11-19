@@ -22,8 +22,6 @@ package-lock.json*
 # IDE
 /.idea
 
-lib/
-es/
 dist/
 build/
 .vscode

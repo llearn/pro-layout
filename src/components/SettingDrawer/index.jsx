@@ -92,13 +92,13 @@ const getThemeList = (i18nRender) => {
   ]
 
   if (list.find((item) => item.theme === 'dark')) {
-    themeList.push({
-      // disable click
-      disable: true,
-      key: 'realDark',
-      url: 'https://gw.alipayobjects.com/zos/antfincdn/hmKaLQvmY2/LCkqqYNmvBEbokSDscrm.svg',
-      title: i18nRender('app.setting.pagestyle.realdark'),
-    })
+    // themeList.push({
+    //   // disable click
+    //   disable: true,
+    //   key: 'realDark',
+    //   url: 'https://gw.alipayobjects.com/zos/antfincdn/hmKaLQvmY2/LCkqqYNmvBEbokSDscrm.svg',
+    //   title: i18nRender('app.setting.pagestyle.realdark'),
+    // })
   }
   // insert  theme color List
   list.forEach(item => {
@@ -264,7 +264,7 @@ const SettingDrawer = {
             }} />
           </Body>
 
-          <LayoutSetting
+          {/* <LayoutSetting
             i18nRender={i18n}
             contentWidth={contentWidth}
             fixedHeader={fixedHeader}
@@ -274,7 +274,7 @@ const SettingDrawer = {
               changeSetting(type, value)
             }}
           />
-          <Divider />
+          <Divider /> */}
 
           <Body title={i18n('app.setting.othersettings')}>
             <List
